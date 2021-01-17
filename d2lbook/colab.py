@@ -9,7 +9,7 @@ from d2lbook import utils
 def parse_repo_lib(repo_str, lib_str, version):
     repo = utils.split_config_str(repo_str)
     if len(repo) == 1 and len(repo[0]) == 1:
-        repos = {None:repo[0]}
+        repos = {None:repo[0][0]}
         libs = {None:utils.split_config_str(lib_str, 2)}
     else:
         repo = utils.split_config_str(repo_str, 2)
